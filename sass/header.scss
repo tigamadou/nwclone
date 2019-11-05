@@ -1,0 +1,21 @@
+header{
+    max-width:1310px;
+    margin:auto;
+    background:#fff;
+    .navbar{
+        padding: 10px;
+        background:$primary;
+        .navbar-brand{
+            .logo{
+                height: 60px;
+            }
+        }
+    }
+    .hdr-top{
+
+        background:red;
+    }
+    .hdr-btm{
+
+    }
+}

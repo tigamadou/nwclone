@@ -1,3 +1,11 @@
+@import 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css';
+$primary:#f72210;
+$gray:#a09fa5;
+$mobile:576px;
+$tablet:768px;
+$desktop:992px;
+$large:1200px;
+
 body{
     background: #f4f5f6;
     color: #333;
@@ -13,3 +21,16 @@ body{
     background: #fff;
     padding:20px 30px;
 }
+.sec{
+    margin-bottom:30px;
+}
+.bg-primary{
+    background:$primary!important;
+}
+.cover{
+    position: relative;
+}
+
+@import 'header.scss';
+@import 'featured.scss';
+//@import 'featured.scss';

@@ -1,3 +1,4 @@
+@import 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css';
 body {
   background: #f4f5f6;
   color: #333;
@@ -15,6 +16,38 @@ body {
 .main-container {
   background: #fff;
   padding: 20px 30px;
+}
+
+.sec {
+  margin-bottom: 30px;
+}
+
+.bg-primary {
+  background: #f72210 !important;
+}
+
+.cover {
+  position: relative;
+}
+
+header {
+  max-width: 1310px;
+  margin: auto;
+  background: #fff;
+}
+header .navbar {
+  padding: 10px;
+  background: #f72210;
+}
+header .navbar .navbar-brand .logo {
+  height: 60px;
+}
+header .hdr-top {
+  background: red;
+}
+.featured .list .list-title {
+  color: #a09fa5;
+  margin-bottom: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
