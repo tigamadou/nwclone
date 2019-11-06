@@ -42,9 +42,34 @@ a{
 }
 .sec{
     margin-bottom:30px;
+    .sec-title{
+        font-size:19px;
+        font-weight: 700;
+        border-bottom: 1px solid #d9d9d9;
+    
+    }
+}
+.cover{
+    position:relative;
+    .category{
+        display: block;
+        font-size: 17px;
+        font-weight: bold;
+        color: $primary;
+        text-transform: uppercase;
+        padding: 8px 15px 9px;
+        background-color: rgba(255,255,255,.9);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+    }
 }
 .bg-primary{
     background:$primary!important;
+}
+.bg-primary:hover{
+    background:darken($primary,10%)!important;
 }
 .cover{
     position: relative;
@@ -67,4 +92,5 @@ h1, h2, h3, h4, h5, h6,
 @import 'header.scss';
 @import 'featured.scss';
 @import 'utilities.scss';
+@import 'magazine.scss';
 //@import 'featured.scss';
