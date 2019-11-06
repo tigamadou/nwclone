@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAeE,yBAAgC;ECX1B,yBAAM;IAEE,KAAK,EAAE,KAAK",
+"sources": ["../sass/vars.scss","../sass/category.scss"],
+"names": [],
+"file": "category.css"
+}
