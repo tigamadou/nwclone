@@ -302,6 +302,9 @@ header {
 .text-primary2 {
   color: #f72210; }
 
+.btn-primary2 {
+  background: #f72210; }
+
 .image {
   display: block;
   position: relative;
@@ -326,6 +329,10 @@ header {
 .text-22 {
   font-size: 22px;
   line-height: 22px; }
+
+.text-20 {
+  font-size: 20px;
+  line-height: 20px; }
 
 .text-17 {
   font-size: 17px;
@@ -368,5 +375,41 @@ header {
 @media (min-width: 768px) {
   .category-us .list .cover {
     width: 135px; } }
+
+.subscribe-newsletter .card {
+  padding: 30px; }
+.subscribe-newsletter .thumbs {
+  position: relative;
+  padding-right: 90px; }
+  .subscribe-newsletter .thumbs .thumb1 {
+    width: 170px;
+    height: 228px; }
+  .subscribe-newsletter .thumbs .thumb2 {
+    position: absolute;
+    top: 13px;
+    left: 80px;
+    width: 170px;
+    height: 228px; }
+.subscribe-newsletter .newsletter .card {
+  padding: 0px; }
+.subscribe-newsletter .newsletter .image {
+  width: 48%; }
+  @media (max-width: 768px) {
+    .subscribe-newsletter .newsletter .image {
+      width: 100%;
+      height: 160px; } }
+  @media (min-width: 768px) {
+    .subscribe-newsletter .newsletter .image {
+      height: auto;
+      max-width: 191px; } }
+  @media (min-width: 992px) {
+    .subscribe-newsletter .newsletter .image {
+      width: 48%;
+      flex-grow: 1;
+      height: auto;
+      max-width: inherit; } }
+@media (min-width: 992px) {
+  .subscribe-newsletter .newsletter .details {
+    width: 52%; } }
 
 /*# sourceMappingURL=style.css.map */
