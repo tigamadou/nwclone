@@ -1,0 +1,20 @@
+@import 'vars.scss';
+.link1{
+    color:$black;
+}
+.link1:hover{
+    color:$black;
+    text-decoration: underline;
+    text-decoration-color: $primary;
+}
+.link2{
+    color:$black;
+}
+.link2:hover{
+    color:$primary;
+    text-decoration: none;
+  
+}
+.text-primary2{
+    color: $primary;
+}

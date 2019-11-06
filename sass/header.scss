@@ -1,14 +1,111 @@
+@import 'vars.scss';
 header{
     max-width:1310px;
     margin:auto;
     background:#fff;
-    .navbar{
+    border-bottom: 1px solid #f4f5f6;;
+    padding-bottom: 5px;
+    .nav-top{
         padding: 10px;
         background:$primary;
+        display: none;
+        
+        @include desktop{
+            display: flex;
+        }
         .navbar-brand{
             .logo{
                 height: 60px;
             }
+        }
+    }
+    .navbar{
+        padding:0px;
+        height: 50px;
+        background:$primary;
+        position: relative;
+        padding-right: 160px;
+        
+        .subscribe-btn{
+            color: #fff;;
+        }
+        .sub-button{
+            font-size: 18px;
+            font-weight: 700;
+            vertical-align: middle;
+        }
+        @include desktop{
+            background:#fff;
+            .navbar-brand{
+                display: none;
+            }
+            .collapse{
+                display: block!important;
+            }
+            
+        }
+        .nav-item{
+            flex-grow: 1;
+            text-align: center;
+            border-left: 1px solid #d9d9d9;
+        }
+        .nav-item:first-child{
+            
+            border-left:0px;
+        }
+        .nav-link{
+            font-size: 18px;
+            line-height: 18px;
+            font-weight: bold;
+            padding: 0px;
+            @include large{
+                font-size: 21px;
+                line-height: 24px;
+            }
+        }
+
+        .logo-sm{
+            height: 15px;
+            @include desktop{
+                display: none;
+            }
+        }
+        .seach-form{
+            position: absolute;
+            right: 60px;
+            top: 0px;
+            height: 50px;
+            width: 110px;
+            margin-left: 160px;           
+                       
+            background: $light;
+            .form-inline{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .form-control{
+                    width:60px;
+                    display: block;
+                    flex: 1;
+                    height: 50px;
+                    margin: 0px;
+                    border:0px;
+                }
+                .btn{
+                   height: 50px;
+                   width: 30px;
+                   background: #fff;
+                   color: #333;
+                   padding: 0px;
+                   border: 0px;;
+                }
+            }
+           
+        }
+        .seach-form:focus-within{
+            width: 95%;
+            margin-left: 50px;
         }
     }
     .hdr-top{

@@ -1,0 +1,19 @@
+.link1 {
+  color: #000; }
+
+.link1:hover {
+  color: #000;
+  text-decoration: underline;
+  text-decoration-color: #f72210; }
+
+.link2 {
+  color: #000; }
+
+.link2:hover {
+  color: #f72210;
+  text-decoration: none; }
+
+.text-primary2 {
+  color: #f72210; }
+
+/*# sourceMappingURL=utilities.css.map */

@@ -1,17 +1,87 @@
-/* Error: Undefined variable.
- *   ,
- * 7 |         background:$primary;
- *   |                    ^^^^^^^^
- *   '
- *   sass/header.scss 7:20  root stylesheet */
+header {
+  max-width: 1310px;
+  margin: auto;
+  background: #fff;
+  border-bottom: 1px solid #f4f5f6;
+  padding-bottom: 5px; }
+  header .nav-top {
+    padding: 10px;
+    background: #f72210;
+    display: none; }
+    @media (min-width: 992px) {
+      header .nav-top {
+        display: flex; } }
+    header .nav-top .navbar-brand .logo {
+      height: 60px; }
+  header .navbar {
+    padding: 0px;
+    height: 50px;
+    background: #f72210;
+    position: relative;
+    padding-right: 160px; }
+    header .navbar .subscribe-btn {
+      color: #fff; }
+    header .navbar .sub-button {
+      font-size: 18px;
+      font-weight: 700;
+      vertical-align: middle; }
+    @media (min-width: 992px) {
+      header .navbar {
+        background: #fff; }
+        header .navbar .navbar-brand {
+          display: none; }
+        header .navbar .collapse {
+          display: block !important; } }
+    header .navbar .nav-item {
+      flex-grow: 1;
+      text-align: center;
+      border-left: 1px solid #d9d9d9; }
+    header .navbar .nav-item:first-child {
+      border-left: 0px; }
+    header .navbar .nav-link {
+      font-size: 18px;
+      line-height: 18px;
+      font-weight: bold;
+      padding: 0px; }
+      @media (min-width: 1200px) {
+        header .navbar .nav-link {
+          font-size: 21px;
+          line-height: 24px; } }
+    header .navbar .logo-sm {
+      height: 15px; }
+      @media (min-width: 992px) {
+        header .navbar .logo-sm {
+          display: none; } }
+    header .navbar .seach-form {
+      position: absolute;
+      right: 60px;
+      top: 0px;
+      height: 50px;
+      width: 110px;
+      margin-left: 160px;
+      background: #ddd; }
+      header .navbar .seach-form .form-inline {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+        header .navbar .seach-form .form-inline .form-control {
+          width: 60px;
+          display: block;
+          flex: 1;
+          height: 50px;
+          margin: 0px;
+          border: 0px; }
+        header .navbar .seach-form .form-inline .btn {
+          height: 50px;
+          width: 30px;
+          background: #fff;
+          color: #333;
+          padding: 0px;
+          border: 0px; }
+    header .navbar .seach-form:focus-within {
+      width: 95%;
+      margin-left: 50px; }
+  header .hdr-top {
+    background: red; }
 
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 7 \2502          background:$primary;\a   \2502                     ^^^^^^^^\a   \2575 \a   sass/header.scss 7:20  root stylesheet";
-}
+/*# sourceMappingURL=header.css.map */
