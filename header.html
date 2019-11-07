@@ -28,8 +28,8 @@
                     </svg>
                 </a>
     
-                <div class="d-flex align-items-center">
-                    <a class="nav-link text-white" href="#">SIGN IN</a>
+                <div class="d-flex align-items-center ">
+                    <a class="nav-link text-white " href="#">SIGN IN</a>
                     <a class="py-1 nav-link bg-white d-flex align-items-center text-primary2 sub-button" href="#" style="height: 29px">
                         <span>SUBSCRIBE</span>
                         <span><span class="oi oi-chevron-right"></span></span>
@@ -48,50 +48,58 @@
                         </g>
                     </svg>
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+            <div class="d-flex d-lg-none align-items-center authsection mr-4">
+                <a class="nav-link text-white mr-2 inline-block" href="#">SIGN IN</a>
+                <a class="p-1 py-2 nav-link bg-white d-flex align-items-center text-primary2 sub-button" href="#" style="height: 29px">
+                    <span class="mr-1">SUBSCRIBE</span>
+                    <span><span class="oi oi-chevron-right"></span></span>
+                </a>
+            </div>
+            <button class="navbar-toggler text-white" type="button" data-toggle="collapse" >
+              <span class="oi oi-menu"></span>
             </button>
+            
           
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse animated hide" id="navbarSupportedContent">
                 
-              <ul class="navbar-nav  d-flex justify-content-center align-items-center">
-               
-                <li class="nav-item">
-                  <a class="nav-link" href="#">US</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">World</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Business</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Tech & Science</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Culture</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Newsgeek</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Sport</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Health</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Opinion</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Vantage</a>
-                </li>
-                <li class="seach-form">
+              <ul class="navbar-nav  d-flex justify-content-center align-items-lg-center ">
+                <li class="seach-form order-sm-0">
                     <form class="form-inline ">
                         <input class="form-control  rounded-0 border-0" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn  rounded-0 btn-outline-success border-0 text-black my-2 my-sm-0" type="submit"><span class="oi oi-magnifying-glass"></span></button>
+                        <button class="btn  rounded-0 btn-outline-default border-0 text-black my-2 my-sm-0" type="submit"><span class="oi oi-magnifying-glass"></span></button>
                     </form>
                 </li>
+                <li class="nav-item ">
+                  <a class="nav-link " href="#"><span>US</span> <span class="icon"><span class="oi oi-chevron-right"></span></span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><span>World</span><span class="icon"><span class="oi oi-chevron-right"></span></span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><span>Business</span><span class="icon"><span class="oi oi-chevron-right"></span></span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><span>Tech & Science</span><span class="icon"><span class="oi oi-chevron-right"></span></span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><span>Culture</span><span class="icon"><span class="oi oi-chevron-right"></span></span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><span>Newsgeek</span><span class="icon"><span class="oi oi-chevron-right"></span></span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><span>Sport</span><span class="icon"><span class="oi oi-chevron-right"></span></span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><span>Health</span><span class="icon"><span class="oi oi-chevron-right"></span></span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><span>Opinion</span><span class="icon"><span class="oi oi-chevron-right"></span></span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><span>Vantage</span><span class="icon"><span class="oi oi-chevron-right"></span></span></a>
+                </li>
+                
               
               </ul>
               
@@ -110,6 +118,14 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script>
+      $(function(){
+        $('.navbar-toggler').click(function(){
+          $( ".collapse" ).toggleClass( "show");
+          $( ".collapse" ).toggleClass( "hide");
+        })
+      })
+    </script>
 </body>
 
 </html>

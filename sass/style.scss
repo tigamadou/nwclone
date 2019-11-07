@@ -92,6 +92,7 @@ h1, h2, h3, h4, h5, h6,
 
 }
 
+@import 'animate.scss';
 @import 'header.scss';
 @import 'featured.scss';
 @import 'utilities.scss';
@@ -99,3 +100,19 @@ h1, h2, h3, h4, h5, h6,
 @import 'slideshow.scss';
 @import 'category.scss';
 @import 'newsletter.scss';
+@import 'footer.scss';
+
+.animated {
+    -webkit-animation-duration: 0.25s;
+    animation-duration: 0.25s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+
+  .sticky-top{
+    @media screen and (max-width:$tablet){
+        position: relative;
+        z-index: 0;
+        
+    }
+  }
