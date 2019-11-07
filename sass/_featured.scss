@@ -1,4 +1,4 @@
-@import 'vars.scss';
+@import '_vars.scss';
 
 .featured {
   position: relative;
@@ -130,10 +130,6 @@
     }
   }
 
-  .more-stories{
-
-  }
-
   .list.opinions {
     ul {
       li {
@@ -163,20 +159,6 @@
     }
   }
 
-  .list.latest-news {
-    position: relative;
-
-    .cover{
-
-    }
-
-    .link2 {
-      font-size: 14px;
-      font-weight: 700;
-      line-height: 21px;
-    }
-  }
-
   .newsletter-sm-box {
     font-size: 19px;
     line-height: 19px;
@@ -192,6 +174,16 @@
 
     .link2 {
       font-size: 15px;
+    }
+  }
+
+  .list.latest-news {
+    position: relative;
+
+    .link2 {
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 21px;
     }
   }
 }

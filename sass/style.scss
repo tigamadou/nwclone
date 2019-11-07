@@ -1,6 +1,6 @@
 @import 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css';
 @import '/font/css/open-iconic-bootstrap.min.css';
-@import 'vars.scss';
+@import '_vars.scss';
 
 * {
   box-sizing: border-box;
@@ -86,10 +86,6 @@ a {
   background: darken($primary, 10%) !important;
 }
 
-.cover {
-  position: relative;
-}
-
 .icon-logo {
   flex: none;
   display: block;
@@ -115,15 +111,15 @@ h6,
   font-weight: bold;
 }
 
-@import 'animate.scss';
-@import 'header.scss';
-@import 'featured.scss';
-@import 'utilities.scss';
-@import 'magazine.scss';
-@import 'slideshow.scss';
-@import 'category.scss';
-@import 'newsletter.scss';
-@import 'footer.scss';
+@import '_animate.scss';
+@import '_header.scss';
+@import '_featured.scss';
+@import '_utilities.scss';
+@import '_magazine.scss';
+@import '_slideshow.scss';
+@import '_category.scss';
+@import '_newsletter.scss';
+@import '_footer.scss';
 
 .animated {
   -webkit-animation-duration: 0.25s;

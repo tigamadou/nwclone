@@ -1,6 +1,5 @@
 @import 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css';
 @import '/font/css/open-iconic-bootstrap.min.css';
-@import url("vars.scss");
 
 * {
   box-sizing: border-box;
@@ -86,10 +85,6 @@ a {
 
 .bg-primary:hover {
   background: #cd1607 !important;
-}
-
-.cover {
-  position: relative;
 }
 
 .icon-logo {
@@ -3652,13 +3647,6 @@ h6,
   animation-name: slideOutUp;
 }
 
-.animated {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-
 .animated.infinite {
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
@@ -3974,6 +3962,16 @@ header .hdr-top {
   width: 135px;
 }
 
+.image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .featured .article2 .cover img {
   width: 100%;
 }
@@ -3994,8 +3992,18 @@ header .hdr-top {
   clear: both;
 }
 
+.in-magazine .article .cover {
+  position: relative;
+}
+
 .featured .list article .cover {
   position: relative;
+}
+
+.in-magazine .article .cover .category {
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .featured .list article .cover .category {
@@ -4099,16 +4107,6 @@ header .hdr-top {
   font-size: 13px;
 }
 
-.featured .list.latest-news {
-  position: relative;
-}
-
-.featured .list.latest-news .link2 {
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 21px;
-}
-
 .featured .newsletter-sm-box {
   font-size: 19px;
   line-height: 19px;
@@ -4123,8 +4121,27 @@ header .hdr-top {
   background: #666;
 }
 
+.link2 {
+  color: #000;
+}
+
+.link2:hover {
+  color: #f72210;
+  text-decoration: none;
+}
+
 .featured .newsletter-sm-box .link2 {
   font-size: 15px;
+}
+
+.featured .list.latest-news {
+  position: relative;
+}
+
+.featured .list.latest-news .link2 {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
 }
 
 .featured::after {
@@ -4143,15 +4160,6 @@ header .hdr-top {
   text-decoration-color: #f72210;
 }
 
-.link2 {
-  color: #000;
-}
-
-.link2:hover {
-  color: #f72210;
-  text-decoration: none;
-}
-
 .text-primary2 {
   color: #f72210;
 }
@@ -4165,16 +4173,6 @@ header .hdr-top {
   position: relative;
   margin: 0;
   padding: 0;
-}
-
-.image img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
 }
 
 .image.is-1by1 {
@@ -4211,16 +4209,6 @@ header .hdr-top {
 
 .in-magazine .article.first .link:hover {
   background: #a09fa5;
-}
-
-.in-magazine .article .cover {
-  position: relative;
-}
-
-.in-magazine .article .cover .category {
-  position: absolute;
-  bottom: 0;
-  left: 0;
 }
 
 .in-magazine .article .title .link1 {
