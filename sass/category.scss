@@ -1,11 +1,34 @@
-@import 'vars.scss';
-.category-us{
-    .list{
+@import url('vars.scss');
+@mixin mobile {
+  @media (max-width: #{$tablet}) {
+    @content;
+  }
+}
 
-        .cover{
-            @include tab{
-                width: 135px;
-            }
-        }
+@mixin tab {
+  @media (min-width: #{$tablet}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media (min-width: #{$large}) {
+    @content;
+  }
+}
+
+.category-us {
+  .list {
+    .cover {
+      @include tab {
+        width: 135px;
+      }
     }
+  }
 }

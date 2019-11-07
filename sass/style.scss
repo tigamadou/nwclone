@@ -2,94 +2,117 @@
 @import '/font/css/open-iconic-bootstrap.min.css';
 @import 'vars.scss';
 
-*{
-    box-sizing: border-box;
-    -webkit-appearance:none;
-    -moz-appearance:none;
-    -ms-appearance: none;
-    -o-appearance: none;
-    appearance: none;;
-   
+* {
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
 }
-body{
-    background: #f4f5f6;
-    color: #333;
-    font-family: "Roboto Condensed",sans-serif;
-    font-size: 15px;
-    line-height: 20px;
-}
-ul{
-    padding:0px;
-    list-style: none;
-}
-a{
-    color: inherit;
-}
-.container{
-    max-width:1310px;
-}
-.is-rounded{
-    border-radius:50%;
-    overflow: hidden;
-}
-.main-container{
-    background: #fff;
-    padding-top: 20px;
-    @include desktop{
-        padding:20px 30px;
 
-    }
+body {
+  background: #f4f5f6;
+  color: #333;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 15px;
+  line-height: 20px;
 }
-.sec{
-    margin-bottom:30px;
-    .sec-title{
-        font-size:19px;
-        font-weight: 700;
-        border-bottom: 1px solid #d9d9d9;
-    
-    }
-    .sec-title2{
-        color: $primary;
-    }
+
+ul {
+  padding: 0;
+  list-style: none;
 }
-.cover{
-    position:relative;
-    .category{
-        display: block;
-        font-size: 17px;
-        font-weight: bold;
-        color: $primary;
-        text-transform: uppercase;
-        padding: 8px 15px 9px;
-        background-color: rgba(255,255,255,.9);
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        z-index: 1;
-    }
+
+a {
+  color: inherit;
 }
-.bg-primary{
-    background:$primary!important;
+
+.container {
+  max-width: 1310px;
 }
-.bg-primary:hover{
-    background:darken($primary,10%)!important;
+
+.is-rounded {
+  border-radius: 50%;
+  overflow: hidden;
 }
-.cover{
-    position: relative;
+
+.main-container {
+  background: #fff;
+  padding-top: 20px;
+
+  @include desktop {
+    padding: 20px 30px;
+  }
 }
-.icon-logo{
-    flex: none;
+
+.sec {
+  margin-bottom: 30px;
+
+  .sec-title {
+    font-size: 19px;
+    font-weight: 700;
+    border-bottom: 1px solid #d9d9d9;
+  }
+
+  .sec-title2 {
+    color: $primary;
+  }
+}
+
+.cover {
+  position: relative;
+
+  .category {
     display: block;
-    width: 29px;
-    height: 28px;
-    background: url(https://g.newsweek.com/www/images/logo-n1.svg) center/contain no-repeat #f72210;
-    margin-right: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    color: $primary;
+    text-transform: uppercase;
+    padding: 8px 15px 9px;
+    background-color: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+  }
 }
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
+
+.bg-primary {
+  background: $primary !important;
+}
+
+.bg-primary:hover {
+  background: darken($primary, 10%) !important;
+}
+
+.cover {
+  position: relative;
+}
+
+.icon-logo {
+  flex: none;
+  display: block;
+  width: 29px;
+  height: 28px;
+  background: url(https://g.newsweek.com/www/images/logo-n1.svg) center/contain no-repeat #f72210;
+  margin-right: 10px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
   margin-bottom: 10px;
   font-weight: bold;
-
 }
 
 @import 'animate.scss';
@@ -103,16 +126,15 @@ h1, h2, h3, h4, h5, h6,
 @import 'footer.scss';
 
 .animated {
-    -webkit-animation-duration: 0.25s;
-    animation-duration: 0.25s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-  }
+  -webkit-animation-duration: 0.25s;
+  animation-duration: 0.25s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
 
-  .sticky-top{
-    @media screen and (max-width:$tablet){
-        position: relative;
-        z-index: 0;
-        
-    }
+.sticky-top {
+  @media screen and (max-width: $tablet) {
+    position: relative;
+    z-index: 0;
   }
+}

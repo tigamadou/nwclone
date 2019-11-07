@@ -1,33 +1,37 @@
 @import 'vars.scss';
-.in-magazine{
-    .article.first{
-        
-                .link{
-                    display: block;
-                    background: #f4f5f7;
-                    padding: 10px 10px 10px 12px;
-                    font-size:18px;
-                    font-weight: 700;
-                }
-                .link:hover{
-                    background: $gray;
-                }
+
+.in-magazine {
+  .article.first {
+    .link {
+      display: block;
+      background: #f4f5f7;
+      padding: 10px 10px 10px 12px;
+      font-size: 18px;
+      font-weight: 700;
     }
-    .article{
-        .cover{
-            position: relative;
-            .category{
-                position: absolute;
-                bottom:0px;
-                left: 0px;
-            }
-        }
-        .title{
-            .link1{
-                font-size:20px;
-                line-height:20px;
-                font-weight: 700;
-            }
-        }
+
+    .link:hover {
+      background: $gray;
     }
+  }
+
+  .article {
+    .cover {
+      position: relative;
+
+      .category {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+    }
+
+    .title {
+      .link1 {
+        font-size: 20px;
+        line-height: 20px;
+        font-weight: 700;
+      }
+    }
+  }
 }

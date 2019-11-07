@@ -88,7 +88,8 @@ C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/vendor/listen/lib/listen/list
 C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
 C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
 */
-body:before {
+body::before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'mobile'.\A         on line 28 of sass/newsletter.scss, in `mobile'\A         from line 28 of sass/newsletter.scss\A \A 23:             padding: 0px;\A 24:         }\A 25:         .image{\A 26:             \A 27:             width: 48%;\A 28:             @include mobile{\A 29:                 width: 100%;\A 30:                 height: 160px;\A 31:             }\A 32:             @include tab{\A 33:                 height: auto;                "; }
+  content: "Error: Undefined mixin 'mobile'.\A         on line 28 of sass/newsletter.scss, in `mobile'\A         from line 28 of sass/newsletter.scss\A \A 23:             padding: 0px;\A 24:         }\A 25:         .image{\A 26:             \A 27:             width: 48%;\A 28:             @include mobile{\A 29:                 width: 100%;\A 30:                 height: 160px;\A 31:             }\A 32:             @include tab{\A 33:                 height: auto;                ";
+}

@@ -1,5 +1,25 @@
-@media (min-width: 768px) {
-  .category-us .list .cover {
-    width: 135px; } }
+/* Error: Undefined variable.
+ *   ,
+ * 9 |   @media (min-width: #{$tablet}) {
+ *   |                        ^^^^^^^
+ *   '
+ *   sass/category.scss 9:24  tab()
+ *   sass/category.scss 29:7  root stylesheet */
 
-/*# sourceMappingURL=category.css.map */
+body::before {
+  font-family:
+    "Source Code Pro",
+    "SF Mono",
+    Monaco,
+    Inconsolata,
+    "Fira Mono",
+    "Droid Sans Mono",
+    monospace,
+    monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a   \2577 \a 9 \2502    @media (min-width: #{$tablet}) {\a   \2502                         ^^^^^^^\a   \2575 \a   sass/category.scss 9:24  tab()\a   sass/category.scss 29:7  root stylesheet";
+}

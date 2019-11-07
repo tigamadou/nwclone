@@ -1,120 +1,187 @@
 .featured {
-  position: relative; }
-  @media (min-width: 992px) {
-    .featured .col71 {
-      width: 71%; } }
-  @media (min-width: 992px) {
-    .featured .col29 {
-      width: 29%; } }
-  .featured .article2 {
-    border-top: 1px solid #ddd; }
-    .featured .article2 .title {
-      font-size: 17px;
-      line-height: 20px; }
-    .featured .article2 .cover {
-      width: 135px; }
-      .featured .article2 .cover img {
-        width: 100%; }
-      @media (max-width: 768px) {
-        .featured .article2 .cover {
-          width: 258px; } }
-  .featured .list .list-title {
-    color: #a09fa5;
-    font-size: 16px;
-    font-weight: bold; }
-  .featured .list article {
-    clear: both; }
-    .featured .list article .cover {
-      position: relative; }
-      .featured .list article .cover .category {
-        display: block;
-        font-size: 17px;
-        font-weight: bold;
-        color: #f72210;
-        text-transform: uppercase;
-        padding: 8px 15px 9px;
-        background-color: rgba(255, 255, 255, 0.9);
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        z-index: 1; }
-      @media (min-width: 992px) {
-        .featured .list article .cover {
-          height: 150px; } }
-    .featured .list article h3 {
-      font-size: 24px;
-      line-height: 24px; }
-    .featured .list article .related li {
-      border-top: 1px solid #d9d9d9;
-      border-bottom: 1px solid #d9d9d9;
-      padding: 10px 0; }
-      .featured .list article .related li .relatedLink {
-        color: #000;
-        font-weight: bold;
-        font-size: 17px;
-        line-height: 20px; }
-  .featured .culture-travel {
-    background: #f4f5f7; }
-    .featured .culture-travel .list-title {
-      padding: 10px; }
-    .featured .culture-travel .row {
-      margin: auto -15px; }
-      .featured .culture-travel .row article .title {
-        color: #272727;
-        font-size: 20px;
-        line-height: 22px;
-        margin-bottom: 10px; }
-      .featured .culture-travel .row article picture {
-        position: relative;
-        display: block; }
-        .featured .culture-travel .row article picture img {
-          position: absolute;
-          top: 0px;
-          left: 0px;
-          right: 0px;
-          bottom: 0px;
-          vertical-align: middle;
-          height: auto; }
-        @media (min-width: 992px) {
-          .featured .culture-travel .row article picture {
-            height: 162px; } }
-  .featured .list.opinions ul li {
-    border-top: 1px solid #ddd;
-    padding-top: 10px;
-    padding-bottom: 10px; }
-  .featured .list.opinions ul li:first-child {
-    border-top: none; }
-  .featured .list.opinions .info .title {
-    font-size: 15px;
-    line-height: 21px;
-    font-weight: 700;
-    display: block; }
-  .featured .list.opinions .info .author {
-    font-weight: bold;
-    color: #a09fa5;
-    font-size: 13px; }
-  .featured .list.latest-news {
-    position: relative; }
-    .featured .list.latest-news .link2 {
-      font-size: 14px;
-      font-weight: 700;
-      line-height: 21px; }
-  .featured .newsletter-sm-box {
-    font-size: 19px;
-    line-height: 19px;
-    font-weight: 700;
-    max-width: 300px;
-    margin: 0 auto 30px;
-    background: #f4f5f7;
-    border: 1px solid #e5e5e5; }
-    .featured .newsletter-sm-box .btn {
-      background: #666666; }
-    .featured .newsletter-sm-box .link2 {
-      font-size: 15px; }
+  position: relative;
+}
 
-.featured:after {
+@media (min-width: 992px) {
+  .featured .col71 {
+    width: 71%;
+  }
+}
+
+@media (min-width: 992px) {
+  .featured .col29 {
+    width: 29%;
+  }
+}
+
+.featured .article2 {
+  border-top: 1px solid #ddd;
+}
+
+.featured .article2 .title {
+  font-size: 17px;
+  line-height: 20px;
+}
+
+.featured .article2 .cover {
+  width: 135px;
+}
+
+.featured .article2 .cover img {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .featured .article2 .cover {
+    width: 258px;
+  }
+}
+
+.featured .list .list-title {
+  color: #a09fa5;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.featured .list article {
+  clear: both;
+}
+
+.featured .list article .cover {
+  position: relative;
+}
+
+.featured .list article .cover .category {
+  display: block;
+  font-size: 17px;
+  font-weight: bold;
+  color: #f72210;
+  text-transform: uppercase;
+  padding: 8px 15px 9px;
+  background-color: rgba(255, 255, 255, 0.9);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+@media (min-width: 992px) {
+  .featured .list article .cover {
+    height: 150px;
+  }
+}
+
+.featured .list article h3 {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.featured .list article .related li {
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+  padding: 10px 0;
+}
+
+.featured .list article .related li .relatedLink {
+  color: #000;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+}
+
+.featured .culture-travel {
+  background: #f4f5f7;
+}
+
+.featured .culture-travel .list-title {
+  padding: 10px;
+}
+
+.featured .culture-travel .row {
+  margin: auto -15px;
+}
+
+.featured .culture-travel .row article .title {
+  color: #272727;
+  font-size: 20px;
+  line-height: 22px;
+  margin-bottom: 10px;
+}
+
+.featured .culture-travel .row article picture {
+  position: relative;
+  display: block;
+}
+
+.featured .culture-travel .row article picture img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  vertical-align: middle;
+  height: auto;
+}
+
+@media (min-width: 992px) {
+  .featured .culture-travel .row article picture {
+    height: 162px;
+  }
+}
+
+.featured .list.opinions ul li {
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.featured .list.opinions ul li:first-child {
+  border-top: none;
+}
+
+.featured .list.opinions .info .title {
+  font-size: 15px;
+  line-height: 21px;
+  font-weight: 700;
+  display: block;
+}
+
+.featured .list.opinions .info .author {
+  font-weight: bold;
+  color: #a09fa5;
+  font-size: 13px;
+}
+
+.featured .list.latest-news {
+  position: relative;
+}
+
+.featured .list.latest-news .link2 {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+}
+
+.featured .newsletter-sm-box {
+  font-size: 19px;
+  line-height: 19px;
+  font-weight: 700;
+  max-width: 300px;
+  margin: 0 auto 30px;
+  background: #f4f5f7;
+  border: 1px solid #e5e5e5;
+}
+
+.featured .newsletter-sm-box .btn {
+  background: #666;
+}
+
+.featured .newsletter-sm-box .link2 {
+  font-size: 15px;
+}
+
+.featured::after {
   content: " ";
   clear: both;
-  display: table; }
-
-/*# sourceMappingURL=featured.css.map */
+  display: table;
+}
