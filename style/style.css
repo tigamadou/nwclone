@@ -3405,7 +3405,7 @@ header .hdr-top {
   z-index: 1;
 }
 @media (min-width: 992px) {
-  .featured .list article .cover {
+  .featured .list.culture-travel article .cover {
     height: 150px;
   }
 }
