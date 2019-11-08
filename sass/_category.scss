@@ -1,0 +1,11 @@
+@import '_vars.scss';
+
+.category-us {
+  .list {
+    .cover {
+      @include tab {
+        width: 135px;
+      }
+    }
+  }
+}

@@ -1,0 +1,134 @@
+@import '_vars.scss';
+
+* {
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+
+body {
+  background: #f4f5f6;
+  color: #333;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: inherit;
+}
+
+.container {
+  max-width: 1310px;
+}
+
+.is-rounded {
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.main-container {
+  background: #fff;
+  padding-top: 20px;
+
+  @include desktop {
+    padding: 20px 30px;
+  }
+}
+
+.sec {
+  margin-bottom: 30px;
+
+  .sec-title {
+    font-size: 19px;
+    font-weight: 700;
+    border-bottom: 1px solid #d9d9d9;
+  }
+
+  .sec-title2 {
+    color: $primary;
+  }
+}
+
+.cover {
+  position: relative;
+
+  .category {
+    display: block;
+    font-size: 17px;
+    font-weight: bold;
+    color: $primary;
+    text-transform: uppercase;
+    padding: 8px 15px 9px;
+    background-color: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+  }
+}
+
+.bg-primary {
+  background: $primary !important;
+}
+
+.bg-primary:hover {
+  background: darken($primary, 10%) !important;
+}
+
+.icon-logo {
+  flex: none;
+  display: block;
+  width: 29px;
+  height: 28px;
+  background: url(https://g.newsweek.com/www/images/logo-n1.svg) center/contain no-repeat #f72210;
+  margin-right: 10px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+@import '_animate.scss';
+@import '_header.scss';
+@import '_featured.scss';
+@import '_utilities.scss';
+@import '_magazine.scss';
+@import '_slideshow.scss';
+@import '_category.scss';
+@import '_newsletter.scss';
+@import '_footer.scss';
+
+.animated {
+  -webkit-animation-duration: 0.25s;
+  animation-duration: 0.25s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.sticky-top {
+  @media screen and (max-width: $tablet) {
+    position: relative;
+    z-index: 0;
+  }
+}
