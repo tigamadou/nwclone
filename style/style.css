@@ -214,7 +214,6 @@ header .navbar .sub-button {
 @media (min-width: 992px) {
   header .navbar {
     background: #fff;
-    padding-right: 160px;
   }
 
   header .navbar .navbar-brand {
@@ -268,28 +267,32 @@ header .navbar .logo-sm {
 
 @media (min-width: 992px) {
   header .navbar .seach-form {
-    position: absolute;
+    /* position: absolute;
     right: 60px;
-    top: 0;
+    top: 0; */
     height: 50px;
-    width: 110px;
-    margin-left: 160px;
-    background: #ddd;
+    
+    //margin-left: 160px;
+    //background: #ddd;
   }
 
   header .navbar .seach-form .form-inline {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+    width: 110px;
   }
 
   header .navbar .seach-form .form-inline .form-control {
-    width: 60px;
+    width: 40px;
     display: block;
     flex: 1;
     height: 50px;
     margin: 0;
     border: 0;
+    padding: 0px;
+    
   }
 
   header .navbar .seach-form .form-inline .btn {
@@ -300,13 +303,43 @@ header .navbar .logo-sm {
     padding: 0;
     border: 0;
   }
+  header .navbar .seach-form{
+    margin-left: 30px;
+  }
+  .navbar-nav{
+    max-width: 95%;
+  }
+  .navbar-nav::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: "";
+    display: block;
+    width: 66px;
+    background-color: #f72210;
+    border-left: 12px solid white;
+    border-top: 13px solid #f72210;
+  }
 }
 
 @media (min-width: 992px) {
-  header .navbar .seach-form:focus-within {
-    width: 95%;
+  /* header .navbar .seach-form:focus-within {
+    
     margin-left: 50px;
+    position: absolute;
+    right: 9%;
+    top: 0px;
+    bottom: 0px;
+    
   }
+  header .navbar .seach-form:focus-within .form-control{
+    background: yellow;
+    position: absolute;
+    right: -7px;
+    top: 0px;
+    bottom: 0px;
+  } */
+  
 }
 
 header .hdr-top {
